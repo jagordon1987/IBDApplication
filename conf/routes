@@ -4,6 +4,7 @@ DELETE  /foods/:id                  controllers.application.FoodApplicationContr
 GET     /food/:id                   controllers.application.FoodApplicationController.getFood(id: Long)
 POST    /foods                      controllers.application.FoodApplicationController.addNewFood
 PUT     /foods/:id                  controllers.application.FoodApplicationController.updateFood(id: Long)
+GET     /foods/form                 controllers.application.FoodApplicationController.foodForm
 
 GET     /api/foods                  controllers.endpoint.FoodApplicationEndpoint.getAllFoods
 DELETE  /api/foods/:id              controllers.endpoint.FoodApplicationEndpoint.deleteFood(id: Long)

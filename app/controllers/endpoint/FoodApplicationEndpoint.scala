@@ -6,7 +6,6 @@ import javax.inject.Inject
 import persistence.Food
 import play.api.libs.json.{JsError, JsSuccess, Json}
 import play.api.mvc.{Controller, Action}
-import play.api.mvc._
 import service.FoodService
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
@@ -40,8 +39,6 @@ class FoodApplicationEndpoint @Inject()(foodService: FoodService) extends Contro
       case JsError(error) => Future {
         BadRequest
       }
-
-
     }
   }
 

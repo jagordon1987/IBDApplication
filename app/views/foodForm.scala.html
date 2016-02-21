@@ -1,0 +1,9 @@
+@import util.forms.FoodFormData
+@(form: Form[FoodFormData])(implicit messages: Messages)
+@main("Add an item") {
+    @helper.form(controllers.application.routes.FoodApplicationController.addNewFood) {
+        @helper.inputText(form("name"))
+        @helper.inputText(form("additionalInformation"))
+        <button>Save</button>
+    }
+}
