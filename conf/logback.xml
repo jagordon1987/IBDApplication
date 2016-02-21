@@ -15,6 +15,30 @@
   <logger name="play" level="INFO" />
   <logger name="application" level="DEBUG" />
 
+  <logger name="controllers" additivity="false">
+    <level value="INFO"/>
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <logger name="service" additivity="false">
+    <level value="INFO"/>
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <logger name="persistence" additivity="false">
+    <level value="INFO"/>
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <logger name="util" additivity="false">
+    <level value="INFO"/>
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
   <root level="ERROR">
     <appender-ref ref="STDOUT" />
   </root>
