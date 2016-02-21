@@ -8,6 +8,7 @@ import scala.concurrent.Future
 
 class FoodService @Inject()(foodDAO: FoodDAO) {
 
+
   def addNewFood(food: Food): Future[String] = {
     foodDAO.addNewFood(food)
   }
